@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assessment/app/core/route/route_paths.dart';
-
+import 'package:flutter_assessment/app/data/local/repo/model/repository_entity.dart';
+import 'package:flutter_assessment/app/modules/home/view/details_page.dart';
 import 'package:flutter_assessment/app/modules/home/view/home_page.dart';
 import 'package:flutter_assessment/app/modules/main/view/main_view.dart';
 import 'package:flutter_assessment/app/modules/setting/view/setting_page.dart';
@@ -16,6 +17,16 @@ class RouteServices {
           settings: settings,
         );
 
+      case RoutePaths.detailsPage:
+        // Check if the arguments are of the correct type (RepositoryEntity)
+        if (args is RepositoryEntity) {
+          return NoAnimationPageRoute(
+            builder: (_) => DetailsPage(repo: args),
+            settings: settings,
+          );
+        } else {
+          return _errorRoute();
+        }
       case RoutePaths.main:
         return NoAnimationPageRoute(
           builder: (_) => MainView(),

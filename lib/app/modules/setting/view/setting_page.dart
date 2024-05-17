@@ -41,24 +41,6 @@ class SettingPage extends StatelessWidget {
             height: 1,
             color: Theme.of(context).dividerColor,
           ),
-          const ListTile(
-            title: Text("About"),
-          ),
-          Divider(
-            height: 1,
-            thickness: 5,
-            color: Theme.of(context).dividerColor,
-          ),
-          const ListTile(
-            title: Text("Facebook"),
-          ),
-          Divider(
-            height: 1,
-            color: Theme.of(context).dividerColor,
-          ),
-          const ListTile(
-            title: Text("Share"),
-          ),
           Divider(
             height: 1,
             color: Theme.of(context).dividerColor,

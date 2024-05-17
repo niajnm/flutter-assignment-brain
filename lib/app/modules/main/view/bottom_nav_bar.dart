@@ -109,8 +109,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       BottomNavItem.fromIconData(
         navTitle: "Setting",
-        activeIcon: Icons.calendar_today_outlined,
-        regularIcon: Icons.calendar_today_outlined,
+        activeIcon: Icons.settings,
+        regularIcon: Icons.settings,
         menuCode: MenuCode.SETTING,
       ),
     ];
