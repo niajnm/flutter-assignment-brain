@@ -13,15 +13,6 @@
 
 <h2>Getting Started</h2>
 
-<ol>
-  <li>Clone the repository:</li>
-
-  <pre><code>git clone https://gitlab.com/shakircam/flutter_assessment.git
-cd YourRepositoryName</code></pre>
-
-  <li>Switch to the appropriate branch (e.g., <code>develop</code>):</li>
-
-  <pre><code>git checkout develop</code></pre>
 
   <li>Install dependencies:</li>
 
